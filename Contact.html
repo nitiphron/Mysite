@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- อื่น ๆ ที่อยู่ใน head -->
+  <style>
+      /* CSS เพื่อสร้างเส้นรอบ form */
+      form {
+          border: 1px solid #ccc;
+          padding: 2px;
+          border-radius: 8px;
+          /* margin: 20px auto; */
+          max-width: 600px; /* กำหนดความกว้างสูงสุดของ form */
+      }
+  </style>
+</head>
+
+<body>
+ 
+    <div class="topnav">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./Education.html">Education</a>
+        <a href="./Work.html">Work Experience</a>
+        <a href="./Contact.html">Contact Me</a>
+    </div>
+    <hr>
+    <h1>Contact Me</h1>
+    <form id="myForm" ACTION="https://jkorpela.fi/cgi-bin/echo.cgi"METHOD="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <label for="email">Your E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br><br>
+      
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="15" cols="80"></textarea><br><br>
+      
+        <input type="submit" value="Send">
+        <input type="button" value="Clear" onclick="clearForm()">
+    </form>
+
+    <script>
+        function clearForm() {
+            document.getElementById("myForm").reset();
+        }
+    </script>
+</body>
+
+</html>

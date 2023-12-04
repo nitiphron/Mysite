@@ -1,61 +1,36 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>W3.CSS Template</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body>
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
-<script>
-  // JavaScript code here
-  let [first, second, third] = ['Maya', 'Marisa', 'Chi'];
-  console.log(first); // 'Maya'
-  console.log(second); // 'Marisa'
-  console.log(third); // 'Chi'
+    <head></head>
+  <body>
+            <a class="active" href="./index.html">Home</a>
+            <a href="./Education.html">Education</a>
+            <a href="./Work.html">Work Experience</a>
+            <a href="./Contact.html">Contact Me</a>
+            <hr>
+    
+        
 
-  let [raindrops, whiskers, ...aFewOfMyFavoriteThings] = [
-    'Raindrops on roses',
-    'whiskers on kittens',
-    'Bright copper kettles',
-    'warm woolen mittens',
-  ];
-
-  console.log(raindrops); // 'Raindrops on roses'
-  console.log(whiskers); // 'whiskers on kittens'
-  console.log(aFewOfMyFavoriteThings);
-  // ['Bright copper kettles', 'warm woolen mittens']
-
-  let numbers = [10, 20, 30];
-  [numbers[1], numbers[2]] = [numbers[2], numbers[1]];
-  console.log(numbers); // *
-
-  let facts = { numPlanets: 8, yearNeptuneDiscovered: 1846 };
-  let { numPlanets, yearNeptuneDiscovered } = facts;
-  console.log(numPlanets); // 8
-  console.log(yearNeptuneDiscovered); // 1846
-
-  let planetFacts = {
-    numPlanets: 8,
-    yearNeptuneDiscovered: 1846,
-    yearMarsDiscovered: 1659
-  };
-
-  let { numPlanets: planets, ...discoveryYears } = planetFacts;
-  console.log(discoveryYears); // { yearNeptuneDiscovered: 1846, yearMarsDiscovered: 1659 }
-</script>
-
-</body>
+            <h1>Nitiphon Chaisue</h1>
+            <h3>Full stack developer</h3>
+            <div class="profile-circle">
+                <img src="./zero.jpg" alt="Profile Picture" style="border-radius: 50%; width: 300px; height: 300px;">
+    
+              </div>
+            <p>Energetic web developer with certificated from Codecamp Thailand (#13).Codecamp isone of the best developer's bootcamp in Thailand.end(React), back-end (Node & Express) and Database (MySQL).</p>
+            <hr>
+            <h2>Personal Info</h2>
+            <p><strong>Location </strong>: Mhk, Thailand</p>
+            <p><strong>Phone</strong>: 065-474-3544</p>
+            <p><strong>E-mail</strong>: hardandmin@gmail.com</p>
+            <p><strong>Line ID</strong>: 556dd56d</p>
+            <hr>
+        <h3>Skills</h3>
+        <p><b><li>Ux UI Design (Figma)</li></b></p>
+        <p><b><li>HTML</li></b></p>
+        <p><b><li>Git</li></b></p>
+        <p><b><li>My SQl</li></b></p>
+        <p><b><li>Node.JS</li></b></p>
+        <p><b><li>JavaScript</li></b></p>
+        <hr>
+        <a href="https://www.google.com/">Goto Google</a>
+  </body>
 </html>
